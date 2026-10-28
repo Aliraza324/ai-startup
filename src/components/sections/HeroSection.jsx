@@ -66,11 +66,11 @@ export default function HeroSection({ onOpenContact }) {
             </p>
 
             {/* CTAs */}
-            <div className="pt-2 flex flex-wrap items-center gap-4">
+            <div className="pt-2 flex items-center gap-2 sm:gap-4 flex-nowrap">
               <button
                 type="button"
                 onClick={onOpenContact}
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#590907] text-[#E8D2B5] text-xs font-semibold hover:bg-[#74110E] transition-colors cursor-pointer"
+                className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3.5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-[#590907] text-[#E8D2B5] text-[11px] sm:text-xs font-semibold hover:bg-[#74110E] transition-colors cursor-pointer whitespace-nowrap"
               >
                 <span>Discuss Your Project</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -79,7 +79,7 @@ export default function HeroSection({ onOpenContact }) {
               <a
                 href="#process"
                 onClick={scrollToProcess}
-                className="inline-flex items-center px-7 py-3.5 rounded-full border border-[#D4B999] bg-[#FAF7F2]/60 text-[#590907] text-xs font-semibold hover:bg-[#FAF7F2] transition-colors"
+                className="inline-flex items-center justify-center px-3.5 sm:px-7 py-3 sm:py-3.5 rounded-full border border-[#D4B999] bg-[#FAF7F2]/60 text-[#590907] text-[11px] sm:text-xs font-semibold hover:bg-[#FAF7F2] transition-colors whitespace-nowrap"
               >
                 Explore Our Process
               </a>

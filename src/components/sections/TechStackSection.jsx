@@ -1,7 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 
 export default function TechStackSection({ onOpenContact }) {
-  const row1 = [
+  const technologies = [
     {
       name: 'React / Next.js',
       icon: (
@@ -47,9 +47,6 @@ export default function TechStackSection({ onOpenContact }) {
         </svg>
       ),
     },
-  ]
-
-  const row2 = [
     {
       name: 'Supabase RLS',
       icon: (
@@ -86,6 +83,14 @@ export default function TechStackSection({ onOpenContact }) {
         </svg>
       ),
     },
+    {
+      name: 'Node.js',
+      icon: (
+        <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#5FA04E">
+          <path d="M12 2l9 5.2v10.4L12 23l-9-5.2V7.2L12 2zm0 2.3L5 8.3v7.4l7 4 7-4V8.3l-7-4z" />
+        </svg>
+      ),
+    },
   ]
 
   return (
@@ -103,7 +108,7 @@ export default function TechStackSection({ onOpenContact }) {
             </h2>
 
             <p className="text-sm text-[#57534E] leading-relaxed">
-              We use industry-leading technologies to build high-performance and secure applications.
+              We use modern, proven tools across the full application lifecycle. Every choice is made for maintainability, developer speed and production reliability.
             </p>
 
             <div className="pt-2">
@@ -118,11 +123,10 @@ export default function TechStackSection({ onOpenContact }) {
             </div>
           </div>
 
-          {/* Right Column: 2 Rows of White Cards (7 cols) */}
-          <div className="lg:col-span-7 space-y-4">
-            {/* Row 1: 5 cards */}
+          {/* Right Column: Unified Grid of 10 White Cards (7 cols) */}
+          <div className="lg:col-span-7">
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-              {row1.map((item) => (
+              {technologies.map((item) => (
                 <div
                   key={item.name}
                   className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center text-center border border-[#E8D2B5]/60 hover:border-[#D4B999] transition-colors min-h-[110px]"
@@ -137,24 +141,7 @@ export default function TechStackSection({ onOpenContact }) {
               ))}
             </div>
 
-            {/* Row 2: 4 cards */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {row2.map((item) => (
-                <div
-                  key={item.name}
-                  className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center text-center border border-[#E8D2B5]/60 hover:border-[#D4B999] transition-colors min-h-[110px]"
-                >
-                  <div className="mb-2 flex items-center justify-center">
-                    {item.icon}
-                  </div>
-                  <span className="text-[11px] font-medium text-[#1C1917] leading-tight">
-                    {item.name}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-[11px] text-[#848775] pt-2 text-center sm:text-left">
+            <p className="text-[11px] text-[#848775] pt-4 text-center sm:text-left">
               Final technology choices depend on your existing project architecture.
             </p>
           </div>

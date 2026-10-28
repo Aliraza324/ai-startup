@@ -86,13 +86,13 @@ export default function DeliverablesSection({ onOpenContact }) {
 
           {/* Right Column: 8 Deliverables Cards (7 cols) */}
           <div className="lg:col-span-7">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
               {deliverables.map((item) => {
                 const Icon = item.icon
                 return (
                   <div
                     key={item.title}
-                    className="bg-white rounded-2xl p-4 flex flex-col justify-between border border-[#E8D2B5]/60 min-h-[120px]"
+                    className="bg-white rounded-2xl p-3 sm:p-4 flex flex-col justify-between border border-[#E8D2B5]/60 min-h-[110px] sm:min-h-[120px]"
                   >
                     <div className="w-8 h-8 rounded-lg bg-[#FAF7F2] text-[#590907] flex items-center justify-center mb-3">
                       <Icon className="w-4 h-4" />
