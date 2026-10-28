@@ -49,10 +49,16 @@ export default function HeroSection({ onOpenContact }) {
               Lovable to Production
             </span>
 
-            <h1 className="font-serif text-4xl sm:text-6xl lg:text-[64px] font-bold tracking-tight leading-[1.04]">
-              <span className="text-[#3E0605] block">From AI Prototype to</span>
-              <span className="text-[#3E0605] block">Production-Ready</span>
-              <span className="text-[#6E7260] block">Product.</span>
+            <h1 className="font-serif text-3xl sm:text-5xl lg:text-[52px] xl:text-[60px] font-bold tracking-tight leading-[1.06]">
+              <span className="text-[#3E0605] block sm:whitespace-nowrap">
+                From AI Prototype&nbsp;to
+              </span>
+              <span className="text-[#3E0605] block">
+                Production-Ready
+              </span>
+              <span className="text-[#6E7260] block">
+                Product.
+              </span>
             </h1>
 
             <p className="text-sm sm:text-base text-[#57534E] max-w-lg leading-relaxed">
